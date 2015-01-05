@@ -16,3 +16,11 @@ html {
 *, *:before, *:after {
 	box-sizing: inherit;
 }
+
+a {
+	text-decoration: none;
+	color: #FA8072;
+	list-style:none;
+	list-style-type: none;
+	font-size: 3rem;
+}
