@@ -37,23 +37,29 @@ h1 {
 	font-family: Merriweather;
 	font-weight: 400;
 	font-style:italic;
-	font-size: 7rem;
+	font-size: 3rem;
 	color: #FFFAF0;
-}
+	letter-spacing: 0px;
+	margin-top: 0rem;
+}	
 
 .nav {
 	position: absolute;
+	-webkit-transition: all ease-out 300ms;
+	-moz-transition: all ease-out 300ms;
+	-ms-transition:  all ease-out 300ms;
+	-o-transition:  all ease-out 300ms;
 	transition: all ease-out 300ms;
 }
 
 .nav ul {
 	display: block;
 	margin: 0 auto;
+	width: 100%;
 }
 
 .nav ul li {
 	display: inline-block;
-	width: 20%;
 	color: #fa8072;
 	font-size: 1.5rem;
 }
@@ -66,47 +72,64 @@ h1 {
 	}
 	
 	h1 {
-		font-size: 1.5rem;
+		font-size: 1.25rem;
 		letter-spacing: 0px;
+		margin-top: -.5rem;
 	}
 }
 
-@media only screen and (min-width: 20em) {
-	h1 {
-		font-size: 3rem;
-		letter-spacing: -1px;
-	}
-}
-
-@media only screen and (min-width: 40em) {
+@media only screen and (min-width: 30em) {
 	.nav {
 		bottom: 15%;
 		width: 60%;
 		left: 20%;
 	}
-	
+
 	h1 {
-		font-size: 5rem;
-		letter-spacing: -2px;
+		font-size: 3rem;
+		letter-spacing: -1px;
+		margin-top: -2rem;
+	}
+	
+	.level h2 {
+		font-size: 1.25rem;
 	}
 }
 
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 50em) {
 	.nav {
 		bottom: 20%;
 		width: 30%;
 		left: 35%;
 	}
+	
+	h1 {
+		font-size: 5rem;
+		letter-spacing: -2px;
+		margin-top: -3rem;
+	}
 }
 
 .level {
+	display: table;
 	height: 25vh;
-	padding: 7% 15%;
+	padding: 5% 15%;
 	text-align: center;
+	vertical-align: middle;
 	font-family: Arimo;
 	font-weight: 700;
 	text-transform: uppercase;
 	color: #FFFAF0;
+	width: 100%;
+}
+
+h2 {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.level h2 {
+	font-size: 1rem;
 }
 
 .one {
@@ -131,11 +154,27 @@ h1 {
 
 .level-icons {
 	height: 75vh;
-	padding: 8% 10%;
+	display: table;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.level-icons ul {
+	display: table-cell;
+	vertical-align: middle;
+	overflow: hidden;
+	width: 100%;
+}
+
+.level-icons ul li {
+	padding: 5% 0;	
+}
+
+.level-icons ul li a {
+	font-size: 1.5rem;
 }
 
 ul { 
-	width: 100%;
 	padding: 0;
 	font-size: 0;
 }
@@ -150,35 +189,110 @@ ul li{
 	vertical-align: top;
 }
 
-ul li i {
-	font-size: 5rem;
+.level-icons ul li i {
+	font-size: 3rem;
 }
+
+.nav ul li:first-child {
+	letter-spacing: 0px;
+	font-size: 1.25rem;
+	margin-bottom: .25rem;
+	text-transform: uppercase;
+	font-family: Arimo;
+	font-weight: 700;
+}
+
+
+@media only screen and (min-width: 50em) { /*responds for larger screens why level-icons works and not ul I don't know */
+	.level-icons ul {
+		padding: 0 10%;
+	}
+	
+	.level-icons ul li i {
+		font-size: 5rem;
+	}
+	
+	.level-icons ul li a {
+		font-size: 2rem;
+	}
+	
+	.level h2 {
+		font-size: 1.5rem;
+	}
+}
+
+em {
+	font-style: normal;
+}
+
+li {
+	-webkit-transition: all ease-out 300ms;
+	-moz-transition: all ease-out 300ms;
+	-ms-transition:  all ease-out 300ms;
+	-o-transition:  all ease-out 300ms;
+	transition: all ease-out 300ms;
+}
+
+/* =========== LEVEL ONE =========== */
 
 .l1-icons li {
 	color: #FFA07A;
-	width: 50%;
+	background-color: ;
 }
+
+.l1-icons li:hover {
+	color: #f5f5f5;
+	background-color: #FFA07A;
+	border: 6px solid #F5F5F5;
+}
+
+.l1-icons li:hover em {
+	text-shadow: 2px 2px rgba(250,128,114,1);
+}
+
+/* =========== LEVEL TWO =========== */
 
 .l2-icons li {
 	color: #FFE4B5;
-	width: 25%;
 }
+
+/* =========== LEVEL THREE =========== */
 
 .l3-icons li {
 	color: #66CDAA;
-	width: 33.3333%
 }
+
+/* =========== LEVEL FOUR =========== */
 
 .l4-icons li {
 	color: #48D1CC;
-	width: 33.3333%
 }
+
+/* =========== LEVEL FIVE =========== */
 
 .l5-icons li {
 	color: #BA55D3;
-	width: 100%;
 }
 
+.iconone {
+	background-color: rgba(250,128,114,.4);
+}
+
+.icontwo {
+	background-color: rgba(255,228,181,.35);
+}
+
+.iconthree {
+	background-color: rgba(102,205,170,.5);
+}
+
+.iconfour {
+	background-color: rgba(72,209,204,.5);
+}
+
+.iconfive {
+	background-color: rgba(186,85,211,.5);
+}
 
 a {
 	text-decoration: none;
