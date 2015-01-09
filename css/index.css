@@ -254,12 +254,37 @@ li {
 
 .l2-icons li {
 	color: #FFE4B5;
+	transform: translateY(15px);
+	border-radius: 144px;
+}
+
+.l2-icons li em {
+	opacity: 0;
+}
+
+.l2-icons li:hover {
+	color: #DAA520;
+	transform: translateY(-20px);
+	border-radius: 20px;
+	background-color: #FFE4B5;
+}
+
+.l2-icons li:hover em {
+	opacity: 1;
+}
+
+.l2-icons li:hover ~ .three {
+	color: #FFE4B5;
 }
 
 /* =========== LEVEL THREE =========== */
 
 .l3-icons li {
 	color: #66CDAA;
+}
+
+.l3-icons li:hover ~ .solar {
+	background-color: red;
 }
 
 /* =========== LEVEL FOUR =========== */
