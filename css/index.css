@@ -30,6 +30,7 @@ body {
 	letter-spacing: -3px;
 	padding: 15% 0;
 	position: relative;
+	background-image: url(../images/starry-banner.svg);
 }
 
 h1 {
