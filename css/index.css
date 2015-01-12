@@ -45,11 +45,20 @@ h1 {
 
 .nav {
 	position: absolute;
+}
+
+.nav li a {
 	-webkit-transition: all ease-out 300ms;
 	-moz-transition: all ease-out 300ms;
 	-ms-transition:  all ease-out 300ms;
 	-o-transition:  all ease-out 300ms;
 	transition: all ease-out 300ms;
+}
+
+.nav a {
+	width: 100%;
+	display: block;
+	overflow:hidden;
 }
 
 .nav ul {
@@ -63,6 +72,13 @@ h1 {
 	color: #fa8072;
 	font-size: 1.5rem;
 }
+
+.nav a:hover {
+	color: #F5F5F5;
+	font-family: Arimo;
+	font-weight: 700;
+}
+	
 
 @media only screen and (min-width: 0em) {
 	.nav {
@@ -108,6 +124,15 @@ h1 {
 		letter-spacing: -2px;
 		margin-top: -3rem;
 	}
+}
+
+.sticky {  
+    position: fixed;  
+    width: 100%;  
+    left: 0;  
+    top: 0;  
+    z-index: 100;  
+    border-top: 0;  
 }
 
 .level {
@@ -237,7 +262,7 @@ li {
 
 .l1-icons li {
 	color: #FFA07A;
-	background-color: ;
+	border: 6px solid rgba(0,0,0,0);
 }
 
 .l1-icons li:hover {
